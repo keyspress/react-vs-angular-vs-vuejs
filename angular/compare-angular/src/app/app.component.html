@@ -1,0 +1,37 @@
+
+<div class="navbar has-shadow">
+  <div class="container">
+    <div class="navbar-start">
+      <a class="navbar-item">MyCompany</a>
+    </div>
+
+    <span class="navbar-toggle" v-on:click="toggleNav" v-bind:class="{ 'is-active': isActive }">
+      <span></span>
+      <span></span>
+      <span></span>
+    </span>
+
+    <div class="navbar-end navbar-menu" v-bind:class="{ 'is-active': isActive }">
+
+      <router-link to="/" class="navbar-item r-item">Home</router-link>
+      <router-link to="/faq" class="navbar-item r-item">Features</router-link>
+      <router-link to="/faq" class="navbar-item r-item">About</router-link>
+      <router-link to="/faq" class="navbar-item r-item">FAQ</router-link>
+
+      <div class="navbar-item">
+        <p class="control">
+          <a class="button is-primary is-outlined">
+            <span class="icon">
+              <i class="fa fa-download"></i>
+            </span>
+            <span>Join Now</span>
+          </a>
+        </p>
+      </div>
+
+    </div>
+  </div>
+</div>
+<router-outlet></router-outlet>
+
+Footer
